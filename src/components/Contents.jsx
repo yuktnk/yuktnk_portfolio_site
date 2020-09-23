@@ -10,7 +10,7 @@ import '../assets/styles/style.css';
 
 
 // 各ページをインポート
-import { About, Skills, Works, Photos, Contact, Profile } from './index'
+import { About, Skills, Works, Photos, Contact, Profile, Footer } from './index'
 
 
 function TabPanel(props) {
@@ -93,6 +93,7 @@ export default function SimpleTabs() {
               <Contact />
             </TabPanel>
           </div>
+        <Footer />
       </div>
     </div>
   );
