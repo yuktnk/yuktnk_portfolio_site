@@ -4,7 +4,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Avatar from '@material-ui/core/Avatar';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import TwitterIcon from '@material-ui/icons/Twitter';
-import Yuki from '../assets/img/avatar.jpg';
+import Yuki from '../assets/img/avatar2.jpg';
 import Link from '@material-ui/core/Link';
 
 const useStyles = makeStyles((theme) => ({
