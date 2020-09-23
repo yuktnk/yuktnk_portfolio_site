@@ -29,7 +29,7 @@ export default function Skills() {
   const bull = <span className={classes.bullet}>•</span>;
 
   return (
-    <div className="cards">
+    <div className="skill-cards">
       <Card className={classes.root}>
         <CardContent>
           <Typography className={classes.title} color="textSecondary" gutterBottom>
