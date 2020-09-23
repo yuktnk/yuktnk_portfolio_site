@@ -2,10 +2,8 @@ import React from 'react'
 
 const Main = () => {
   return (
-    <div id="Main">
-      <div>
+    <div className="main">
       これはメイン！
-      </div>これはメイン！
     </div>
   )
 }

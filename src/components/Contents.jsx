@@ -49,9 +49,8 @@ const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
     backgroundColor: "theme.palette.background.paper",
-    height: "100%",
-    margin: 32,
-    boxShadow: "0 2px 5px rgba(0,0,0,0.26)"
+    width: "80%",
+    
   },
 }));
 
@@ -64,31 +63,36 @@ export default function SimpleTabs() {
   };
 
   return (
-    <div className={classes.root}>
-      <AppBar position="static">
-        <Tabs value={value} onChange={handleChange} aria-label="simple tabs example" >
-          <Tab label="About" {...a11yProps(0)} />
-          <Tab label="Skills" {...a11yProps(1)} />
-          <Tab label="Works" {...a11yProps(2)} />
-          <Tab label="Photos" {...a11yProps(3)} />
-          <Tab label="Contact" {...a11yProps(4)} />
-        </Tabs>
-      </AppBar>
-      <TabPanel value={value} index={0} className="Content">
-        <About />
-      </TabPanel>
-      <TabPanel value={value} index={1} className="Content">
-        <Skills />
-      </TabPanel>
-      <TabPanel value={value} index={2} className="Content">
-        <Works />
-      </TabPanel>
-      <TabPanel value={value} index={3} className="Content">
-        <Photos />
-      </TabPanel>
-      <TabPanel value={value} index={4} className="Content">
-        <Contact />
-      </TabPanel>
+    <div className="main-container">
+      <div className="main-content">
+        ここにプロフィール
+        <div className={classes.root}>
+          <AppBar position="static">
+            <Tabs value={value} onChange={handleChange} aria-label="simple tabs example" >
+              <Tab label="About" {...a11yProps(0)} />
+              <Tab label="Skills" {...a11yProps(1)} />
+              <Tab label="Works" {...a11yProps(2)} />
+              <Tab label="Photos" {...a11yProps(3)} />
+              <Tab label="Contact" {...a11yProps(4)} />
+            </Tabs>
+          </AppBar>
+          <TabPanel value={value} index={0} className="Content">
+            <About />
+          </TabPanel>
+          <TabPanel value={value} index={1} className="Content">
+            <Skills />
+          </TabPanel>
+          <TabPanel value={value} index={2} className="Content">
+            <Works />
+          </TabPanel>
+          <TabPanel value={value} index={3} className="Content">
+            <Photos />
+          </TabPanel>
+          <TabPanel value={value} index={4} className="Content">
+            <Contact />
+          </TabPanel>
+        </div>
+      </div>
     </div>
   );
 }
