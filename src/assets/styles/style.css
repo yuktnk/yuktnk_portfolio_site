@@ -6,6 +6,7 @@
 
 } */
 
+/* 背景などのページ全体 */
 .main-container {
   /* height: 1300px; */
   /* width: 100%; */
@@ -18,7 +19,7 @@
 
 }
 
-
+/* ページ本体 */
 .main-content {
   height: 1400px;
   /* width: 100%; */
@@ -34,15 +35,17 @@
 
 
 .Content {
-  height: calc(100% - 48px);
+  margin-top: 24px;
+  height: calc(100% - 200px);
   /* background-color: aliceblue; */
+  box-shadow: 0 0 16px rgba(0,0,0,0.1);
 } 
 
 /* プロフィール */
 .profile {
   color: gray;
   height: 400px;
-  width: 800px;
+  width: 720px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -56,4 +59,10 @@
   color: gray;
   position: absolute;
   bottom: -90px;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap:wrap;
 }

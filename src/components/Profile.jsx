@@ -5,6 +5,7 @@ import Avatar from '@material-ui/core/Avatar';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import Yuki from '../assets/img/avatar.jpg';
+import Link from '@material-ui/core/Link';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -30,16 +31,19 @@ const Profile = () => {
       </div>
       <h1>Yuki Tanaka</h1>
       <div>
-        <GitHubIcon style={{ fontSize: 20, color: "lightgray", marginRight: 20 }} />
-        <TwitterIcon style={{ fontSize: 20, color: "lightgray" }} />
-      </div>
-      <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-        テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-        テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-        テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-        テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-        テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+        <Link href="https://github.com/yuktnk" target="_blank">
+          <GitHubIcon style={{ fontSize: 20, color: "lightgray", marginRight: 20 }} />
+        </Link>
 
+        <Link href="https://twitter.com/cntx_planar50" target="_blank">
+          <TwitterIcon style={{ fontSize: 20, color: "lightgray" }} />
+        </Link>
+      </div>
+      <p>- Profile -</p>
+      <p>4年間お世話になったECサイトを運営する会社を退職し、
+        プログラミングスクールTECH::CAMPにて70日間（6/22〜8/31）
+        プログラミング学習に励んでおりました。<br />
+        現在はエンジニア転職を目指し、Reactを中心に毎日プログラミング学習を行っています。</p>
     </div>
   )
 }
