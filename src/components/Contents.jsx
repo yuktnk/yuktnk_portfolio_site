@@ -6,10 +6,11 @@ import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
-import '../assets/styles/style.css'
+import '../assets/styles/style.css';
+
 
 // 各ページをインポート
-import { About, Skills, Works, Photos, Contact } from './index'
+import { About, Skills, Works, Photos, Contact, Profile, Footer } from './index'
 
 
 function TabPanel(props) {
@@ -50,7 +51,7 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
     backgroundColor: "theme.palette.background.paper",
     width: "80%",
-    
+    marginTop: 400
   },
 }));
 
@@ -65,10 +66,10 @@ export default function SimpleTabs() {
   return (
     <div className="main-container">
       <div className="main-content">
-        ここにプロフィール
+        <Profile />
         <div className={classes.root}>
           <AppBar position="static">
-            <Tabs value={value} onChange={handleChange} aria-label="simple tabs example" >
+            <Tabs value={value} onChange={handleChange} aria-label="simple tabs example" variant="fullWidth">
               <Tab label="About" {...a11yProps(0)} />
               <Tab label="Skills" {...a11yProps(1)} />
               <Tab label="Works" {...a11yProps(2)} />
@@ -92,6 +93,7 @@ export default function SimpleTabs() {
             <Contact />
           </TabPanel>
         </div>
+        <Footer />
       </div>
     </div>
   );

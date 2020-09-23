@@ -1,4 +1,7 @@
 export { default as Contents } from './Contents.jsx';
+export { default as Profile } from './Profile.jsx';
+export { default as Footer } from './Footer.jsx';
+
 
 export { default as About } from './About.jsx';
 export { default as Skills } from './Skills.jsx';
