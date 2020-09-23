@@ -9,7 +9,7 @@ import Box from '@material-ui/core/Box';
 import '../assets/styles/style.css'
 
 // 各ページをインポート
-import { About, Skills, Works, Photos, Contact } from './index'
+import { About, Skills, Works, Photos, Contact, Profile } from './index'
 
 
 function TabPanel(props) {
@@ -50,7 +50,6 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
     backgroundColor: "theme.palette.background.paper",
     width: "80%",
-    
   },
 }));
 
@@ -65,33 +64,33 @@ export default function SimpleTabs() {
   return (
     <div className="main-container">
       <div className="main-content">
-        ここにプロフィール
-        <div className={classes.root}>
-          <AppBar position="static">
-            <Tabs value={value} onChange={handleChange} aria-label="simple tabs example" >
-              <Tab label="About" {...a11yProps(0)} />
-              <Tab label="Skills" {...a11yProps(1)} />
-              <Tab label="Works" {...a11yProps(2)} />
-              <Tab label="Photos" {...a11yProps(3)} />
-              <Tab label="Contact" {...a11yProps(4)} />
-            </Tabs>
-          </AppBar>
-          <TabPanel value={value} index={0} className="Content">
-            <About />
-          </TabPanel>
-          <TabPanel value={value} index={1} className="Content">
-            <Skills />
-          </TabPanel>
-          <TabPanel value={value} index={2} className="Content">
-            <Works />
-          </TabPanel>
-          <TabPanel value={value} index={3} className="Content">
-            <Photos />
-          </TabPanel>
-          <TabPanel value={value} index={4} className="Content">
-            <Contact />
-          </TabPanel>
-        </div>
+        <Profile />
+          <div className={classes.root}>
+            <AppBar position="static">
+              <Tabs value={value} onChange={handleChange} aria-label="simple tabs example" variant="fullWidth">
+                <Tab label="About" {...a11yProps(0)} />
+                <Tab label="Skills" {...a11yProps(1)} />
+                <Tab label="Works" {...a11yProps(2)} />
+                <Tab label="Photos" {...a11yProps(3)} />
+                <Tab label="Contact" {...a11yProps(4)} />
+              </Tabs>
+            </AppBar>
+            <TabPanel value={value} index={0} className="Content">
+              <About />
+            </TabPanel>
+            <TabPanel value={value} index={1} className="Content">
+              <Skills />
+            </TabPanel>
+            <TabPanel value={value} index={2} className="Content">
+              <Works />
+            </TabPanel>
+            <TabPanel value={value} index={3} className="Content">
+              <Photos />
+            </TabPanel>
+            <TabPanel value={value} index={4} className="Content">
+              <Contact />
+            </TabPanel>
+          </div>
       </div>
     </div>
   );

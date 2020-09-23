@@ -11,6 +11,7 @@ export default class App extends Component {
       <div>
         {/* <Background /> */}
         {/* <Main /> */}
+        
         <Contents />
       </div>
     )
