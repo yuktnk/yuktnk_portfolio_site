@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 // import Background from './components/Background.jsx'
-import Main from './components/Main.jsx'
 import Contents from './components/Contents.jsx'
 
 

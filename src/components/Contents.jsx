@@ -6,7 +6,8 @@ import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
-import '../assets/styles/style.css'
+import '../assets/styles/style.css';
+
 
 // 各ページをインポート
 import { About, Skills, Works, Photos, Contact, Profile } from './index'
@@ -50,6 +51,7 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
     backgroundColor: "theme.palette.background.paper",
     width: "80%",
+    marginTop: 360
   },
 }));
 
