@@ -5,6 +5,7 @@ import { Piece } from './index';
 import Furima from '../assets/img/furima.jpg'
 import Camecomu from '../assets/img/camecomu.jpg'
 import Portfolio from '../assets/img/portfolio.jpg'
+import Chatspace from '../assets/img/chatspace.png'
 
 
 export default class Works extends Component {
@@ -21,6 +22,7 @@ export default class Works extends Component {
         <Piece title="ポートフォリオ" content="このアプリケーションです。" image={Portfolio}/>
         <Piece title="カメコミュ" content="カメラ好きのためのコミュニケーションサイト" image={Camecomu}/>
         <Piece title="FURIMA" content="チームでアジャイル開発を行いました" image={Furima}/>
+        <Piece title="Chat-Space" content="Ruby on Railsでチャットアプリの作成をしました" image={Chatspace}/>
       </div>
     )
   }

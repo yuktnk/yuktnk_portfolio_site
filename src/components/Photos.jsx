@@ -24,12 +24,12 @@ export default class Photos extends React.Component {
   render() {
     return (
       <div className="skill-cards">
-        <Piece title={this.state.title} content={this.state.content} image={Eremophilanivea}/>
-        <Piece title={this.state.title} content={this.state.content} image={Hanabi}/>
-        <Piece title={this.state.title} content={this.state.content} image={Girl}/>
-        <Piece title={this.state.title} content={this.state.content} image={Higanbana}/>
-        <Piece title={this.state.title} content={this.state.content} image={Uncle}/>
-        <Piece title={this.state.title} content={this.state.content} image={Cat}/>
+        <Piece title="エレモフィラ・ニベア" content="埼玉県大宮市で撮影" image={Eremophilanivea}/>
+        <Piece title="戸田橋花火大会" content="写真コンクールでグランプリを獲得" image={Hanabi}/>
+        <Piece title="少女" content="私の地元岩手県宮古市で撮影" image={Girl}/>
+        <Piece title="彼岸花" content="埼玉県幸手市で撮影" image={Higanbana}/>
+        <Piece title="川下りの船長さん" content="山形県最上川で撮影" image={Uncle}/>
+        <Piece title="猫ちゃん" content="かわいい声で鳴きます" image={Cat}/>
       </div>
     )
   }
