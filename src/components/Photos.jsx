@@ -20,6 +20,9 @@ export default class Photos extends React.Component {
   render() {
     return (
       <div className="skill-cards">
+        <Piece title={this.state.title} content={this.state.content} image={Eremophilanivea}/>
+        <Piece title={this.state.title} content={this.state.content} image={this.state.image}/>
+        <Piece title={this.state.title} content={this.state.content} image={this.state.image}/>
         <Piece title={this.state.title} content={this.state.content} image={this.state.image}/>
         <Piece title={this.state.title} content={this.state.content} image={this.state.image}/>
         <Piece title={this.state.title} content={this.state.content} image={this.state.image}/>
