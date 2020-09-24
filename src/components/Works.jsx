@@ -2,9 +2,9 @@ import React, { Component } from 'react'
 import { Piece } from './index';
 
 // 使用する画像のインポート
-import Furima from '../assets/img/furima.png'
-import Camecomu from '../assets/img/camecomu.png'
-import Portfolio from '../assets/img/portfolio.png'
+import Furima from '../assets/img/furima.jpg'
+import Camecomu from '../assets/img/camecomu.jpg'
+import Portfolio from '../assets/img/portfolio.jpg'
 
 
 export default class Works extends Component {
