@@ -7,10 +7,7 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 // import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-import Eremophilanivea from '../assets/img/bgi.jpg'
-import Hanabi from '../assets/img/hanabi.jpg';
-import Girl from '../assets/img/girl.jpg';
-import Higanbana from '../assets/img/higanbana.jpg';
+
 
 const useStyles = makeStyles({
   pieces: {
@@ -36,7 +33,7 @@ const Piece = (props) => {
           <CardMedia
             className={classes.media}
             image={props.image}
-            title="Contemplative Reptile"
+            title={props.title}
           />
           <CardContent>
             <Typography gutterBottom component="h2">
