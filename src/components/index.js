@@ -8,3 +8,5 @@ export { default as Skills } from './Skills.jsx';
 export { default as Works } from './Works.jsx';
 export { default as Photos } from './Photos.jsx';
 export { default as Contact } from './Contact.jsx';
+
+export { default as Piece } from './Piece.jsx';
