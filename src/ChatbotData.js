@@ -3,7 +3,7 @@ const ChatbotData = {
         answers: [
             {content: "どんな人なのか知りたい", nextId: "personal"},
             {content: "今後どんなエンジニアになりたいか知りたい", nextId: "vision"},
-            {content: "学習内容（過去、現在、未来）について知りたい", nextId: "study"},
+            {content: "学習内容(過去、現在、未来)について知りたい", nextId: "study"},
             {content: "SNSやGitHubを見てみたい", nextId: "sns"},
         ],
         question: "はじめまして。質問をして私のことをもっと知ってください！",
@@ -25,7 +25,7 @@ const ChatbotData = {
             {content: "ひとつ前の質問に戻る", nextId: "personal"},
             {content: "最初の質問に戻る", nextId: "init"}
         ],
-        question: "好きな食べ物は納豆です。年間400パックは食べています！\n嫌いな食べ物は特にありません。親に感謝しています！",
+        question: "好きな食べ物は納豆です。年間400パックは食べています！\n嫌いな食べ物は特にありません。親の教育に感謝しています！",
     },
     "place": {
         answers: [
@@ -132,7 +132,7 @@ const ChatbotData = {
             {content: "ひとつ前の質問に戻る", nextId: "study"},
             {content: "最初の質問に戻る", nextId: "init"}
         ],
-        question: "React関係の技術（Redux,Hooks,Next.js）や、Firebase、AWSなどに興味があります。まずはネットワークの基礎について学習したいです。",
+        question: "React関係の技術（Redux,Hooks,Next.js）や、TypeScript、Firebase、AWSなどに興味があります。まずはネットワークの基礎について学習したいです。",
     },
 
 

@@ -89,6 +89,7 @@ export default class ChatBot extends React.Component {
   render (){
     return (
       <section className="c-section">
+        
         <div className="c-box">
           <ChatsList chats={this.state.chats}/>
           <AnswersList

@@ -1,18 +1,19 @@
 .c-section {
-  position: relative;
+  /* position: relative; */
   /* height: 100vh; */
-  width: 100%;
-}
-
-.c-box {
-  background: #fff;
-  border: 1px solid rgba(0,0,0,0.3);
+  min-width: 432px;
+  box-shadow: 0 0 16px rgba(0,0,0,0.1);
   border-radius: 4px;
   box-sizing: border-box;
-  height: 592px;
-  max-width: 432px;
+}
+.c-box {
+  background: #fff;
+  /* border: 1px solid rgba(0,0,0,0.3); */
+  
+  height: 700px;
+  min-width: 400px;
   padding: 0 1rem;
-  width: 100%;
+  /* width: 100%; */
 
   /* Vertical and horizontal center alignment */
   /* position: absolute;
