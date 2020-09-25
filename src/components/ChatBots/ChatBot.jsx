@@ -35,7 +35,7 @@ export default class ChatBot extends React.Component {
   selectAnswer = (selectedAnswer, nextQuestionId) => {
     switch(true) {
       case (nextQuestionId === 'init') :
-        setTimeout(() => this.displayNextQuestion(nextQuestionId), 500);
+        setTimeout(() => this.displayNextQuestion(nextQuestionId), 1);
         break;
 
       case (/^https:*/.test(nextQuestionId)):
