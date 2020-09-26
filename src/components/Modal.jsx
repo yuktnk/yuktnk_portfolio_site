@@ -4,7 +4,9 @@ import Modal from '@material-ui/core/Modal';
 import Backdrop from '@material-ui/core/Backdrop';
 import Fade from '@material-ui/core/Fade';
 
+import GitHubIcon from '@material-ui/icons/GitHub';
 import { Piece } from './index';
+import Link from '@material-ui/core/Link';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -14,8 +16,10 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: 'center',
   },
   paper: {
+    color: "gray",
+    maxWidth: 800,
     backgroundColor: theme.palette.background.paper,
-    border: '2px solid #000',
+    // border: '2px solid #000',
     boxShadow: theme.shadows[5],
     padding: theme.spacing(2, 4, 3),
   },
@@ -33,10 +37,12 @@ export default function Photo(props) {
     setOpen(false);
   };
 
+  const exist = props.url
+
   return (
     <div>
       <div type="button" onClick={handleOpen}>
-        <Piece title={props.title} content={props.title} image={props.image} onClick={handleOpen}/>
+        <Piece title={props.title} content={props.content} image={props.image} onClick={handleOpen}/>
       </div>
       <Modal
         aria-labelledby="transition-modal-title"
@@ -52,9 +58,16 @@ export default function Photo(props) {
       >
         <Fade in={open}>
           <div className={classes.paper}>
+            <div className={classes.modal}>
+              <h3>{props.title} </h3>
+              { exist ? (
+              <Link href={props.url} target="_blank">
+                <GitHubIcon style={{ fontSize: 20, color: "lightgray", marginRight: 20 }} />
+              </Link>
+              ):(<></>)}
+            </div>
             <img src={props.image} />
-            {/* <h2 id="transition-modal-title">Transition modal</h2>
-            <p id="transition-modal-description">react-transition-group animates me.</p> */}
+            <p>{props.description}</p>
           </div>
         </Fade>
       </Modal>

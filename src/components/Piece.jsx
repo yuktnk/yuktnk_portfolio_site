@@ -24,7 +24,7 @@ const useStyles = makeStyles({
   
 });
 
-const Piece = (props) => {
+const Modal = (props) => {
   const classes = useStyles();
   return (
     <div className={classes.pieces}>
@@ -50,4 +50,4 @@ const Piece = (props) => {
   )
 }
 
-export default Piece
+export default Modal
