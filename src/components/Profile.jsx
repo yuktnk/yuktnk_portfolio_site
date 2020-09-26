@@ -19,6 +19,9 @@ const useStyles = makeStyles((theme) => ({
     height: theme.spacing(20),
     boxShadow: "0 2px 5px rgba(0,0,0,0.26)",
   },
+  myName: {
+    fontFamily: "Roboto Slab, Times New Roman, serif"
+  }
 }));
 
 
@@ -29,7 +32,7 @@ const Profile = () => {
       <div className={classes.root}>
         <Avatar alt="yuki" src={Yuki} className={classes.large} />
       </div>
-      <h1>Yuki Tanaka</h1>
+      <h1 className={classes.myName}>Yuki Tanaka</h1>
       <div>
         <Link href="https://github.com/yuktnk" target="_blank">
           <GitHubIcon style={{ fontSize: 20, color: "lightgray", marginRight: 20 }} />

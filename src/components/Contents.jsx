@@ -53,6 +53,10 @@ const useStyles = makeStyles((theme) => ({
     width: "95%",
     marginTop: 400,
   },
+  navBtn :{
+    textTransform: "none",
+    fontFamily: "Roboto Slab, Times New Roman, serif",
+  }
 }));
 
 export default function SimpleTabs() {
@@ -70,11 +74,11 @@ export default function SimpleTabs() {
         <div className={classes.root}>
           <AppBar position="static">
             <Tabs value={value} onChange={handleChange} aria-label="simple tabs example" variant="fullWidth">
-              <Tab label="About" {...a11yProps(0)} />
-              <Tab label="Skills" {...a11yProps(1)} />
-              <Tab label="Works" {...a11yProps(2)} />
-              <Tab label="Photos" {...a11yProps(3)} />
-              <Tab label="Contact" {...a11yProps(4)} />
+              <Tab label="About" {...a11yProps(0)} className={classes.navBtn} />
+              <Tab label="Skills" {...a11yProps(1)} className={classes.navBtn} />
+              <Tab label="Works" {...a11yProps(2)} className={classes.navBtn} />
+              <Tab label="Photos" {...a11yProps(3)} className={classes.navBtn} />
+              <Tab label="Contact" {...a11yProps(4)} className={classes.navBtn} />
             </Tabs>
           </AppBar>
           <TabPanel value={value} index={0} className="Content">
