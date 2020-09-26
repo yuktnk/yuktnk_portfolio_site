@@ -18,11 +18,14 @@ export default class Works extends Component {
   }
   render() {
     return (
-      <div className="skill-cards">
-        <Piece title="ポートフォリオ" content="このアプリケーションです。" image={Portfolio}/>
-        <Piece title="カメコミュ" content="カメラ好きのためのコミュニケーションサイト" image={Camecomu}/>
-        <Piece title="FURIMA" content="チームでアジャイル開発を行いました" image={Furima}/>
-        <Piece title="Chat-Space" content="Ruby on Railsでチャットアプリの作成をしました" image={Chatspace}/>
+      <div>
+        <h4 className="subtitle">- 制作物 -</h4>
+        <div className="flexbox">
+          <Piece title="ポートフォリオ" content="このアプリケーションです。" image={Portfolio}/>
+          <Piece title="カメコミュ" content="カメラ好きのためのコミュニケーションサイト" image={Camecomu}/>
+          <Piece title="FURIMA" content="チームでアジャイル開発を行いました" image={Furima}/>
+          <Piece title="Chat-Space" content="Ruby on Railsでチャットアプリの作成をしました" image={Chatspace}/>
+        </div>
       </div>
     )
   }

@@ -1,8 +1,5 @@
 /* 背景などのページ全体 */
 .main-container {
-  /* height: 1300px; */
-  /* width: 100%; */
-  /* position: relative; */
   background-image: url("../img/stars.jpg");
   background-repeat: no-repeat;
   background-size: contain;
@@ -12,9 +9,7 @@
 /* ページ本体 */
 .main-content {
   min-height: 1000px;
-  /* width: 100%; */
   background-color: white;
-  /* border: 1px solid black; */
   border-radius: 8px;
   box-shadow: 0 2px 24px 12px rgba(0,0,0,0.26);
   display: flex;
@@ -55,7 +50,6 @@
   color: gray;
   background-color: white;
   height: 700px;
-  /* width: 432px; */
   box-shadow: 0 0 16px rgba(0,0,0,0.1);
   border-radius: 4px;
   box-sizing: border-box;
@@ -69,7 +63,6 @@
   text-align: left;
   font-size: 15px;
 }
-
 .career {
   text-align: left;
   font-size: 13px;
@@ -78,14 +71,64 @@
 
 /* フッター */
 .footer {
+  font-family: "Roboto Slab", "Times New Roman", serif;
   font-size: 16px;
   color: gray;
   position: absolute;
   bottom: -90px;
 }
 
-.skill-cards {
+
+
+
+/* Skillsページ */
+.skills {
+  width: 100%;
+  color: gray;
+}
+.skill {
+  color: gray;
+}
+
+
+/* 共通 */
+.flexbox {
   display: flex;
   justify-content: space-around;
   flex-wrap:wrap;
+}
+.subtitle {
+  color: gray;
+  text-align: center;
+  margin: 16px 0 40px;
+  letter-spacing: 0.2em;
+}
+
+/* Contactページ */
+.contact {
+  display: flex;
+  justify-content: space-around;
+}
+.tweets {
+  height: 800px;
+  min-width:600px;
+  border-radius: 8px;
+  box-shadow: 0 0 16px rgba(0,0,0,0.1);
+  overflow: scroll;
+  margin-right: 16px;
+}
+.SNS {
+  width: 320px;
+}
+.toSNS {
+  padding: 32px 32px 16px 32px;
+  color: gray;
+  font-size: 12px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 0 16px rgba(0,0,0,0.1);
+  margin: 0 0 64px;
+}
+.toSNSText {
+  margin-top: 24px;
 }

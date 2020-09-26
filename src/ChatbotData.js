@@ -143,7 +143,7 @@ const ChatbotData = {
         answers: [
             {content: "GitHubはこちら", nextId: "https://github.com/yuktnk"},
             {content: "Twitterはこちら", nextId: "https://twitter.com/cntx_planar50"},
-            // {content: "問い合わせる", nextId: "contact"},
+            {content: "問い合わせる", nextId: "contact"},
             {content: "最初の質問に戻る", nextId: "init"}
         ],
         question: "下から選んでください！（別タブで開きます）",

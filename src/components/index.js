@@ -12,3 +12,4 @@ export { default as Contact } from './Contact.jsx';
 
 export { default as Detail } from './Detail.jsx';
 export { default as Piece } from './Piece.jsx';
+export { default as Skill } from './Skill.jsx';
