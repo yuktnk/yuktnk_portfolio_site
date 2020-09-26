@@ -1,11 +1,3 @@
-/* #back-ground {
-  height: 1600px;
-
-  background-image: url("src/assets/img/A7305051.jpg");
-  background-color: aliceblue;
-
-} */
-
 /* 背景などのページ全体 */
 .main-container {
   /* height: 1300px; */
@@ -15,13 +7,11 @@
   background-repeat: no-repeat;
   background-size: contain;
   background-color: aliceblue;
-  padding: 240px 48px 120px;
-
+  padding: 208px 24px 120px;
 }
-
 /* ページ本体 */
 .main-content {
-  height: 1400px;
+  min-height: 1000px;
   /* width: 100%; */
   background-color: white;
   /* border: 1px solid black; */
@@ -31,8 +21,8 @@
   flex-direction: column;
   align-items: center;
   position: relative;
+  padding-bottom: 80px;
 }
-
 
 .Content {
   margin-top: 24px;
@@ -53,6 +43,39 @@
   top: -90px;
 }
 
+/* Aboutページ */
+.about {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.detail {
+  color: gray;
+  background-color: white;
+  height: 700px;
+  /* width: 432px; */
+  box-shadow: 0 0 16px rgba(0,0,0,0.1);
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-right: 16px;
+  padding: 0 16px;
+  text-align: center;
+  overflow: scroll;
+  /* font-family: "Roboto Slab", "Times New Roman", serif; */
+}
+.detail-font {
+  text-align: left;
+  font-size: 15px;
+}
+
+.career {
+  text-align: left;
+  font-size: 13px;
+}
+
+
 /* フッター */
 .footer {
   font-size: 16px;
@@ -63,7 +86,6 @@
 
 .skill-cards {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap:wrap;
 }
-
