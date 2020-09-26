@@ -80,7 +80,7 @@ export default class FormDialog extends React.Component {
               value={this.state.email} type={"email"} onChange={this.inputEmail}
             />
             <TextInput 
-              label={"お問い合わせ"} multiline={true} rows={5}
+              label={"お問い合わせ内容"} multiline={true} rows={5}
               value={this.state.description} type={"text"} onChange={this.inputDescriotion}
             />
           </DialogContentText>
