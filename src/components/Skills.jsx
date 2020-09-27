@@ -11,6 +11,7 @@ export default function Skills() {
     <div className="skills">
       <h4 className="content-title">- 経験したことのある技術 -</h4>
       <div className="flexbox">
+        <Skill field="フロントエンド" title="HTML & css" />
         <Skill field="フロントエンド" title="Haml & Scss" />
         <Skill field="サーバーサイド" title="Ruby" />
         <Skill field="サーバーサイド" title="Ruby on Rails" />

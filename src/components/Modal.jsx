@@ -38,7 +38,10 @@ export default function Photo(props) {
     setOpen(false);
   };
 
-  const exist = props.url
+  const existGitHub = props.GitHubUrl;
+  const existMyApp = props.MyAppUrl;
+
+
 
   return (
     <div>
@@ -61,15 +64,28 @@ export default function Photo(props) {
           <div className={classes.paper}>
             <h3 className={classes.modal}>{props.title} </h3>
             <img style={{ marginBottom: 16 }} src={props.image} />
-            { exist ? (
-            <Link className={classes.modal} href={props.url} target="_blank">
-              {/* <h3>{props.title} </h3>
-              <GitHubIcon style={{ fontSize: 20, color: "gray", marginLeft: 8 }} /> */}
-              <Button variant="contained" style={{height:48, width: 156, color: "white", backgroundColor: "#171515", textTransform: "none", letterSpacing: "0.1em"}}>
-                  <GitHubIcon style={{ fontSize: 16, marginRight: 12 }} />GitHub
-              </Button>
-            </Link>
-            ):(null)}
+            <div className={classes.modal}>
+              { existMyApp ? (
+                <Link href={props.MyAppUrl} target="_blank">
+                  {/* <h3>{props.title} </h3>
+                  <GitHubIcon style={{ fontSize: 20, color: "gray", marginLeft: 8 }} /> */}
+                  <Button variant="contained" style={{height:48, width: 156, letterSpacing: "0.1em", marginRight: 16 }}>
+                      見てみる！
+                  </Button>
+                </Link>
+              ):(null)}
+
+              { existGitHub ? (
+                <Link href={props.GitHubUrl} target="_blank">
+                  {/* <h3>{props.title} </h3>
+                  <GitHubIcon style={{ fontSize: 20, color: "gray", marginLeft: 8 }} /> */}
+                  <Button variant="contained" style={{height:48, width: 156, color: "white", backgroundColor: "#171515", textTransform: "none", letterSpacing: "0.1em"}}>
+                      <GitHubIcon style={{ fontSize: 16, marginRight: 12 }} />GitHub
+                  </Button>
+                </Link>
+              ):(null)}
+            </div>
+            <p>{props.description2}</p>
             <p>{props.description}</p>
           </div>
         </Fade>
