@@ -3,6 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Modal from '@material-ui/core/Modal';
 import Backdrop from '@material-ui/core/Backdrop';
 import Fade from '@material-ui/core/Fade';
+import Button from '@material-ui/core/Button';
 
 import GitHubIcon from '@material-ui/icons/GitHub';
 import { Piece } from './index';
@@ -58,15 +59,17 @@ export default function Photo(props) {
       >
         <Fade in={open}>
           <div className={classes.paper}>
-            <div className={classes.modal}>
-              <h3>{props.title} </h3>
-              { exist ? (
-              <Link href={props.url} target="_blank">
-                <GitHubIcon style={{ fontSize: 20, color: "lightgray", marginRight: 20 }} />
-              </Link>
-              ):(<></>)}
-            </div>
-            <img src={props.image} />
+            <h3 className={classes.modal}>{props.title} </h3>
+            <img style={{ marginBottom: 16 }} src={props.image} />
+            { exist ? (
+            <Link className={classes.modal} href={props.url} target="_blank">
+              {/* <h3>{props.title} </h3>
+              <GitHubIcon style={{ fontSize: 20, color: "gray", marginLeft: 8 }} /> */}
+              <Button variant="contained" style={{height:48, width: 156, color: "white", backgroundColor: "#171515", textTransform: "none", letterSpacing: "0.1em"}}>
+                  <GitHubIcon style={{ fontSize: 16, marginRight: 12 }} />GitHub
+              </Button>
+            </Link>
+            ):(null)}
             <p>{props.description}</p>
           </div>
         </Fade>
