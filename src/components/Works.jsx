@@ -36,7 +36,7 @@ export default class Works extends Component {
   render() {
     return (
       <div>
-        <h4 className="subtitle">- 制作物 （ぜひご覧ください！） -</h4>
+        <h4 className="content-title">- 制作物 （ぜひご覧ください！） -</h4>
         <div className="flexbox">
           <Modal title="ポートフォリオ" content="このアプリケーションです"
           image={Portfolio} description={PfDesc} url={PfURL} />

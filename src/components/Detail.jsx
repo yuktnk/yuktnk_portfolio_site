@@ -4,7 +4,7 @@ const Detail = () => {
   return (
     <div className="detail">
       <div>
-        <h4 className="subtitle">- 自己PR -</h4>
+        <h4 className="aboutPage-title">- 自己PR -</h4>
         <p className="detail-font">
         　私は前職でECサイトを運営する会社に勤めており、EC業界、物流業界の知識と経験があります。<br/>
         <br/>
@@ -23,7 +23,7 @@ const Detail = () => {
 
 
       <div>
-        <h4 className="subtitle">- なぜエンジニアになりたいと思ったか -</h4>
+        <h4 className="aboutPage-title">- なぜエンジニアになりたいと思ったか -</h4>
         <p className="detail-font">
         　プログラミングに関心を持ったきっかけは、前職で使用していた注文管理や在庫管理を行うシステムに不具合が多く、「これを改善できたらもっと業務の効率が上がるのに」「もっとこういう機能があったら良いのに」と感じたことでした。<br/><br/>
         　具体的には、注文をいただいた商品を在庫と引き当てる処理にエラーが発生すること、注文を管理システムに取り込む際に毎回確認作業が発生すること、倉庫内の在庫とWebサイト上の在庫を連動することができないことなどです。<br/><br/>
@@ -32,7 +32,7 @@ const Detail = () => {
       </div>
       
       <div>
-        <h4 className="subtitle">- 略歴 -</h4>
+        <h4 className="aboutPage-title">- 略歴 -</h4>
         <p className="career">
         2009.04 - 2011.03　国立山形大学 工学部 応用生命システム工学科（中退）<br/>
         2011.04 - 2013.03　専門学校ミューズ音楽院 ミキシングクリエーター選考<br/>

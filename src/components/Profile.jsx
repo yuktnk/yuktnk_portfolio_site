@@ -42,7 +42,7 @@ const Profile = () => {
           <TwitterIcon style={{ fontSize: 20, color: "lightgray" }} />
         </Link>
       </div>
-      <p>- Greeting -</p>
+      <h4 className="aboutPage-title">- Greeting -</h4>
       <p style={{textAlign: "center"}}>　ご覧くださいましてありがとうございます。<br/>
         　このSPAアプリは、「転職活動のためのポートフォリオをReactで作りたい！」<br/>という強い気持ちで、
         知識0の状態から学習にチャレンジし、作成いたしました。</p>

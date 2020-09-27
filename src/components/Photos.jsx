@@ -25,7 +25,7 @@ export default class Photos extends React.Component {
   render() {
     return (
       <div>
-        <h4 className="subtitle">- 趣味で撮影した写真 -</h4>
+        <h4 className="content-title">- 趣味で撮影した写真 -</h4>
         <div className="flexbox">
           <Modal title="エレモフィラ・ニベア" content="埼玉県大宮市で撮影" image={Eremophilanivea}/>
           <Modal title="戸田橋花火大会" content="写真コンクールでグランプリを獲得" image={Hanabi}/>

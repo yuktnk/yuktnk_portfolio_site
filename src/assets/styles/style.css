@@ -97,10 +97,16 @@
   justify-content: space-around;
   flex-wrap:wrap;
 }
-.subtitle {
+.content-title {
   color: gray;
   text-align: center;
   margin: 16px 0 40px;
+  letter-spacing: 0.2em;
+}
+.aboutPage-title {
+  color: gray;
+  text-align: center;
+  margin: 40px 0 4px;
   letter-spacing: 0.2em;
 }
 
