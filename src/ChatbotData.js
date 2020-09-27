@@ -46,7 +46,7 @@ const ChatbotData = {
             {content: "ひとつ前の質問に戻る", nextId: "personal"},
             {content: "最初の質問に戻る", nextId: "init"}
         ],
-        question: "趣味はカメラ、ギター、プログラミングです。\n撮った写真はPHOTOSページに載せてあるよ！良かったら見てみてね！",
+        question: "趣味はカメラ、ギター、プログラミングです。\n撮った写真はPHOTOSページに載せてあります。良かったらご覧ください！",
     },
 
 

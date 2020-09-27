@@ -28,7 +28,7 @@ class Contact extends React.Component {
     return (
       <>
         <TweetEmbed />
-        <h4 className="subtitle">- Contact & SNS -</h4>
+        <h4 className="content-title">- Contact & SNS -</h4>
         <div className="contact">
           <div className="tweets">
             <a className="twitter-timeline" href="https://twitter.com/cntx_planar50?ref_src=twsrc%5Etfw">
