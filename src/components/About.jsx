@@ -4,10 +4,14 @@ import { ChatBot } from './ChatBots/index.js';
 
 const About = () => {
   return (
-    <div className="about">
-      <Detail />
-      <ChatBot />
-    </div>
+    <>
+      <h4 className="content-title">- 私について -</h4>
+      <div className="about">
+
+        <Detail />
+        <ChatBot />
+      </div>
+    </>
   )
 }
 
