@@ -1,5 +1,5 @@
 import React from 'react'
-import FormDialog from './Forms/FormDialog.jsx'
+import FormDialog2 from './Forms/FormDialog2.jsx'
 import Button from '@material-ui/core/Button';
 import TweetEmbed from 'react-tweet-embed';
 import GitHubIcon from '@material-ui/icons/GitHub';
@@ -42,7 +42,7 @@ class Contact extends React.Component {
                 <EmailIcon style={{ fontSize: 16, marginRight: 12 }} />問い合わせる
               </Button>
               <p className="toSNSText">（Slackで通知を受け取り、確認でき次第ご返信いたします。）</p>
-              <FormDialog open={this.state.open} handleClose={this.handleClose}/>
+              <FormDialog2 open={this.state.open} handleClose={this.handleClose}/>
             </div>
 
             <div className="toSNS">
@@ -52,7 +52,7 @@ class Contact extends React.Component {
                 </Button>
               </Link>
               <p className="toSNSText">（別タブで開きます。）</p>
-              <FormDialog open={this.state.open} handleClose={this.handleClose}/>
+              <FormDialog2 open={this.state.open} handleClose={this.handleClose}/>
             </div>
 
             <div className="toSNS">
@@ -62,7 +62,7 @@ class Contact extends React.Component {
                 </Button>
               </Link>
               <p className="toSNSText">（別タブで開きます。）</p>
-              <FormDialog open={this.state.open} handleClose={this.handleClose}/>
+              <FormDialog2 open={this.state.open} handleClose={this.handleClose}/>
             </div>
           </div>
         </div>

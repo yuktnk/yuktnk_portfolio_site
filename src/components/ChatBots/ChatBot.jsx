@@ -2,7 +2,7 @@ import React from 'react';
 import defaultDataset from "../../ChatbotData";
 import '/Users/tanakahiroshiakira/React/yuktnk_portfolio_site/src/assets/styles/chatbot.css'
 import { AnswersList, ChatsList } from './index';
-import FormDialog from '../Forms/FormDialog.jsx'
+import FormDialog2 from '../Forms/FormDialog2.jsx'
 
 export default class ChatBot extends React.Component {
   constructor(props) {
@@ -96,7 +96,7 @@ export default class ChatBot extends React.Component {
             answers={this.state.answers}
             select={this.selectAnswer}
           />
-          <FormDialog open={this.state.open} handleClose={this.handleClose} />
+          <FormDialog2 open={this.state.open} handleClose={this.handleClose} />
         </div>
       </section>
     );
