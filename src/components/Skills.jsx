@@ -20,6 +20,7 @@ export default function Skills() {
         <Skill field="バージョン管理" title="GitHub" />
         <Skill field="クラウドコンピューティング" title="AWS" />
         <Skill field="画像編集" title="Pixelmator" />
+        <Skill field="画像編集" title="Photoshop" />
         <Skill field="画像編集" title="Lightroom" />
       </div>
     </div>

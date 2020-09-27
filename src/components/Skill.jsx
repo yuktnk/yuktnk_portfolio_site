@@ -43,9 +43,9 @@ const Skill = (props) => {
           
         </Typography>
       </CardContent>
-      <CardActions>
+      {/* <CardActions>
         <Button className={classes.field}>詳しく</Button>
-      </CardActions>
+      </CardActions> */}
     </Card>
     </div>
   )

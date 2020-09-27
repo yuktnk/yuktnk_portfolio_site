@@ -42,11 +42,10 @@ const Profile = () => {
           <TwitterIcon style={{ fontSize: 20, color: "lightgray" }} />
         </Link>
       </div>
-      <p>- Profile -</p>
-      <p >4年間お世話になったECサイトを運営する会社を退職し、
-        プログラミングスクールTECH::CAMPにて70日間（6/22〜8/31）
-        プログラミング学習に励んでおりました。<br />
-        現在はエンジニア転職を目指し、Reactを中心に毎日プログラミング学習を行っています。</p>
+      <p>- Greeting -</p>
+      <p style={{textAlign: "center"}}>　ご覧くださいましてありがとうございます。<br/>
+        　このSPAアプリは、「転職活動のためのポートフォリオをReactで作りたい！」<br/>という強い気持ちで、
+        知識0の状態から学習にチャレンジし、作成いたしました。</p>
     </div>
   )
 }
