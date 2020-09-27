@@ -45,7 +45,7 @@ const Profile = () => {
       <h4 className="aboutPage-title">- Greeting -</h4>
       <p style={{textAlign: "center"}}>　ご覧くださいましてありがとうございます。<br/>
         　このSPAアプリは「自分自身を紹介するポートフォリオを、Reactで作りたい！」<br/>という強い気持ちで、
-        知識0の状態から学習にチャレンジし作成いたしました。</p>
+        Reactの知識0の状態から学習にチャレンジし作成いたしました。</p>
     </div>
   )
 }
