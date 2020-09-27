@@ -1,7 +1,6 @@
 import React from 'react';
 import { Modal } from './index';
 
-
 // 使用する画像のインポート
 import Eremophilanivea from '../assets/img/bgi.jpg'
 import Hanabi from '../assets/img/hanabi.jpg';
@@ -10,18 +9,7 @@ import Higanbana from '../assets/img/higanbana.jpg';
 import Uncle from '../assets/img/uncle.jpg';
 import Cat from '../assets/img/cat.jpg';
 
-
 export default class Photos extends React.Component {
-  constructor(props){
-    super(props);
-    this.state = {
-      title: "",
-      content: "",
-      image: "",
-    }
-  }
-  
-
   render() {
     return (
       <div>
