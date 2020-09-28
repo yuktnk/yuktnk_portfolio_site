@@ -24,7 +24,8 @@ https://yuktnk-portfolio-site.web.app/
 Chromeの最新版を利用してアクセスしてください。
 
 ## コンポーネントのツリー構造
-<img width="963" alt="ツリー構造" src="https://user-images.githubusercontent.com/67771199/94397957-9075d000-019f-11eb-9601-b64c7c07386a.png">
+![image](https://user-images.githubusercontent.com/67771199/94497221-83a1bc80-0231-11eb-88d9-8976b366d1e2.png)
+
 
 
 ## 作成背景
