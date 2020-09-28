@@ -1,4 +1,5 @@
-![](-kflt5lls.jpg)
+![ポートフォリオトップ](https://user-images.githubusercontent.com/67771199/94397986-a4213680-019f-11eb-9482-80220c69a7f6.jpg)
+
 ## アプリケーション名
 
 Yuki Tanaka ポートフォリオサイト
@@ -23,7 +24,7 @@ https://yuktnk-portfolio-site.web.app/
 Chromeの最新版を利用してアクセスしてください。
 
 ## コンポーネントのツリー構造
-![](-kfm5hz6y.png)
+<img width="963" alt="ツリー構造" src="https://user-images.githubusercontent.com/67771199/94397957-9075d000-019f-11eb-9601-b64c7c07386a.png">
 
 
 ## 作成背景
@@ -80,14 +81,14 @@ jQueryでポートフォリオサイトを1ページ構成で作成すると、�
 
 #### 1 . 自己紹介ページに「チャットボット機能」を実装
 
->![](-kflt5zc3.jpg)
+>![チャットボット](https://user-images.githubusercontent.com/67771199/94398019-b56a4300-019f-11eb-80ad-b996641d7373.jpg)
 >
 あくまで就職活動用のポートフォリオサイトなので、自己紹介の文章は固いイメージになってしまいます。  
 「楽しい気持ちで閲覧して欲しい」と考えた際に、学習の際に作成したチャットボットを思い出し、チャットボットを使って自己紹介をしてみることに決めました。  
 
 #### 2 . 写真掲載ページを実装
 
->![](photos-kflt6fa4.jpg)
+>![Photosページ](https://user-images.githubusercontent.com/67771199/94398042-c2873200-019f-11eb-9e64-cd8df1639895.jpg)
 >
 撮影した写真を掲載するページを作成しました。  
 箸休め的な意味でも、このページを実装して良かったと感じています。
