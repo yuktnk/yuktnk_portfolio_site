@@ -8,10 +8,8 @@ import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 import '../assets/styles/style.css';
 
-
-// 各ページをインポート
+// 使用するコンポーネントをインポート
 import { About, Skills, Works, Photos, Contact, Profile, Footer } from './index'
-
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -59,7 +57,7 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
-export default function SimpleTabs() {
+const SimpleTabs = () => {
   const classes = useStyles();
   const [value, setValue] = React.useState(0);
 
@@ -102,3 +100,5 @@ export default function SimpleTabs() {
     </div>
   );
 }
+
+export default SimpleTabs

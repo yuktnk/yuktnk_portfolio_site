@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Modal } from './index';
+import { DetailWorkPhoto } from './index';
 
 // 使用する画像のインポート
 import Furima from '../assets/img/furima.jpg'
@@ -7,7 +7,7 @@ import Camecomu from '../assets/img/camecomu.jpg'
 import Portfolio from '../assets/img/portfolio.jpg'
 import Chatspace from '../assets/img/chatspace.png'
 
-// ポートフォリオの情報
+// このポートフォリオの情報
 const PfDesc =
 "開発環境： React ／ Material-UI ／ GitHub ／ Firebase"
 const PfURL =
@@ -31,13 +31,11 @@ const FrmGitHubURL =
 const FrmURL =
 "http://54.250.69.247"
 
-
 // チャットスペースの情報
 const CsDesc =
 "開発環境： Haml & Scss ／ Ruby on Rails ／ jQuery ／ MySQL ／ GitHub "
 const CsURL =
 "https://github.com/yuktnk/chat-space"
-
 
 export default class Works extends Component {
   render() {
@@ -45,16 +43,16 @@ export default class Works extends Component {
       <div>
         <h4 className="content-title">- 制作物 （ぜひご覧ください！） -</h4>
         <div className="flexbox">
-          <Modal title="ポートフォリオ" content="このアプリケーションです"
+          <DetailWorkPhoto title="ポートフォリオ" content="このアプリケーションです"
           image={Portfolio} description={PfDesc} GitHubUrl={PfURL} />
 
-          <Modal title="カメコミュ｜カメラ好きのためのコミュニケーションサイト" content="オリジナルアプリです"
+          <DetailWorkPhoto title="カメコミュ｜カメラ好きのためのコミュニケーションサイト" content="オリジナルアプリです"
           image={Camecomu} description={CcDesc} GitHubUrl={CcGitHubURL} MyAppUrl={CcURL} />
-          
-          <Modal title="FURIMA" content="チームでアジャイル開発を行いました"
+
+          <DetailWorkPhoto title="FURIMA" content="チームでアジャイル開発を行いました"
           image={Furima} description={FrmDesc} description2={FrmDesc2} GitHubUrl={FrmGitHubURL} MyAppUrl={FrmURL} />
           
-          <Modal title="Chat-Space" content="Ruby on Railsでチャットアプリの作成をしました"
+          <DetailWorkPhoto title="Chat-Space" content="Ruby on Railsでチャットアプリの作成をしました"
           image={Chatspace} description={CsDesc} GitHubUrl={CsURL}/>
         </div>
       </div>
