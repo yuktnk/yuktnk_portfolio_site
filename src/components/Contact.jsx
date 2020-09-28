@@ -7,7 +7,6 @@ import TwitterIcon from '@material-ui/icons/Twitter';
 import EmailIcon from '@material-ui/icons/Email';
 import Link from '@material-ui/core/Link';
 
-
 class Contact extends React.Component {
   constructor(props) {
     super(props);
@@ -69,7 +68,6 @@ class Contact extends React.Component {
       </>
     )
   }
-  
 }
 
 export default Contact

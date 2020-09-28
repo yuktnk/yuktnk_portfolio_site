@@ -6,6 +6,8 @@
   background-color: aliceblue;
   padding: 208px 24px 120px;
 }
+
+
 /* ページ本体 */
 .main-content {
   min-height: 1000px;
@@ -18,13 +20,13 @@
   position: relative;
   padding-bottom: 80px;
 }
-
 .Content {
   margin-top: 24px;
   height: calc(100% - 200px);
   /* background-color: aliceblue; */
   box-shadow: 0 0 16px rgba(0,0,0,0.1);
 } 
+
 
 /* プロフィール */
 .profile {
@@ -37,6 +39,7 @@
   position: absolute;
   top: -90px;
 }
+
 
 /* Aboutページ */
 .about {
@@ -57,7 +60,6 @@
   padding: 0 16px;
   text-align: center;
   overflow: scroll;
-  /* font-family: "Roboto Slab", "Times New Roman", serif; */
 }
 .detail-font {
   text-align: left;
@@ -77,8 +79,6 @@
   position: absolute;
   bottom: -90px;
 }
-
-
 
 
 /* Skillsページ */

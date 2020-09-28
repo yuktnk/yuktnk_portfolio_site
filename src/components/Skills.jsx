@@ -1,12 +1,7 @@
 import React from 'react';
 import { Skill } from './index.js'
 
-
-
-
-export default function Skills() {
-
-
+const Skills = () => {
   return (
     <div className="skills">
       <h4 className="content-title">- 経験したことのある技術 -</h4>
@@ -27,3 +22,5 @@ export default function Skills() {
     </div>
   );
 }
+
+export default Skills

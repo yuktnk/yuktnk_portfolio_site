@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Detail = () => {
+const DetailMe = () => {
   return (
     <div className="detail">
       <div>
@@ -18,10 +18,7 @@ const Detail = () => {
         <br/>
         　就職後も継続して平日の夜や休日にもプログラミング学習を行い、技術へのキャッチアップに取り組み続けることをお約束いたします。</p>
       </div>
-
-
-
-
+      
       <div>
         <h4 className="aboutPage-title">- なぜエンジニアになりたいと思ったか -</h4>
         <p className="detail-font">
@@ -48,4 +45,4 @@ const Detail = () => {
   )
 }
 
-export default Detail
+export default DetailMe

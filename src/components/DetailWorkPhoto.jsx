@@ -4,9 +4,8 @@ import Modal from '@material-ui/core/Modal';
 import Backdrop from '@material-ui/core/Backdrop';
 import Fade from '@material-ui/core/Fade';
 import Button from '@material-ui/core/Button';
-
 import GitHubIcon from '@material-ui/icons/GitHub';
-import { Piece } from './index';
+import { CardWorkPhoto } from './index';
 import Link from '@material-ui/core/Link';
 
 
@@ -20,13 +19,12 @@ const useStyles = makeStyles((theme) => ({
     color: "gray",
     maxWidth: 800,
     backgroundColor: theme.palette.background.paper,
-    // border: '2px solid #000',
     boxShadow: theme.shadows[5],
     padding: theme.spacing(2, 4, 3),
   },
 }));
 
-export default function Photo(props) {
+const DetailWorkPhoto = (props) => {
   const classes = useStyles();
   const [open, setOpen] = React.useState(false);
 
@@ -41,12 +39,10 @@ export default function Photo(props) {
   const existGitHub = props.GitHubUrl;
   const existMyApp = props.MyAppUrl;
 
-
-
   return (
     <div>
       <div type="button" onClick={handleOpen}>
-        <Piece title={props.title} content={props.content} image={props.image} onClick={handleOpen}/>
+        <CardWorkPhoto title={props.title} content={props.content} image={props.image} onClick={handleOpen}/>
       </div>
       <Modal
         aria-labelledby="transition-modal-title"
@@ -63,12 +59,10 @@ export default function Photo(props) {
         <Fade in={open}>
           <div className={classes.paper}>
             <h3 className={classes.modal}>{props.title} </h3>
-            <img style={{ marginBottom: 16 }} src={props.image} />
+            <img src={props.image} alt={props.title} style={{ marginBottom: 16 }} />
             <div className={classes.modal}>
               { existMyApp ? (
                 <Link href={props.MyAppUrl} target="_blank">
-                  {/* <h3>{props.title} </h3>
-                  <GitHubIcon style={{ fontSize: 20, color: "gray", marginLeft: 8 }} /> */}
                   <Button variant="contained" style={{height:48, width: 156, letterSpacing: "0.1em", marginRight: 16 }}>
                       見てみる！
                   </Button>
@@ -77,13 +71,13 @@ export default function Photo(props) {
 
               { existGitHub ? (
                 <Link href={props.GitHubUrl} target="_blank">
-                  {/* <h3>{props.title} </h3>
-                  <GitHubIcon style={{ fontSize: 20, color: "gray", marginLeft: 8 }} /> */}
-                  <Button variant="contained" style={{height:48, width: 156, color: "white", backgroundColor: "#171515", textTransform: "none", letterSpacing: "0.1em"}}>
+                  <Button variant="contained" style={{height:48, width: 156, color: "white", 
+                  backgroundColor: "#171515", textTransform: "none", letterSpacing: "0.1em"}}>
                       <GitHubIcon style={{ fontSize: 16, marginRight: 12 }} />GitHub
                   </Button>
                 </Link>
               ):(null)}
+
             </div>
             <p>{props.description2}</p>
             <p>{props.description}</p>
@@ -93,3 +87,5 @@ export default function Photo(props) {
     </div>
   );
 }
+
+export default DetailWorkPhoto

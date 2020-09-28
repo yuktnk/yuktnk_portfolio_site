@@ -1,5 +1,5 @@
 import React from 'react';
-import { Detail } from './index.js';
+import { DetailMe } from './index.js';
 import { ChatBot } from './ChatBots/index.js';
 
 const About = () => {
@@ -7,8 +7,7 @@ const About = () => {
     <>
       <h4 className="content-title">- 私について -</h4>
       <div className="about">
-
-        <Detail />
+        <DetailMe />
         <ChatBot />
       </div>
     </>
