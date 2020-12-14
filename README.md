@@ -9,6 +9,7 @@ Yuki Tanaka ポートフォリオサイト
 ### URL
 
 https://yuktnk-portfolio-site.web.app/
+（※転職活動終了したため、現在は非公開）
  
 
 ## 使用技術(開発環境)
